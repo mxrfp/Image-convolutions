@@ -27,8 +27,15 @@ options = {
     "2": np.array([[1/9 for i in range(3)] for j in range(3)]),
     "3": np.array([[(1/16)*i for i in row] for row in [[1,2,1],[2,4,2],[1,2,1]]]),
     "4": np.array([[0,1,0],[1,-4,1],[0,1,0]]),
-    "5": np.array([[-2,-1,0],[-1,1,1],[0,1,2]])
-
+    "5": np.array([[-2,-1,0],[-1,1,1],[0,1,2]]),
+    "6": np.array([[1/16, 2/16, 1/16], [2/16, 8/16, 2/16], [1/16, 2/16, 1/16]]),
+    "7": np.array([[0,0,0],[-1,1,0],[0,0,0]]),
+    "8": np.array([[-1,-1,-1],[-1,9,-1],[-1,-1,-1]]),
+    "9": np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]]),
+    "10": np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]),
+    "11": np.array([[-1, 0, 1], [-1, 0, 1], [-1, 0, 1]]),
+    "12": np.array([[1, 0, 0], [0, 0, 0], [0, 0, 0]]),
+    "13": np.array([[-1, -1, -1], [-1, 8, -1], [-1, -1, -1]])
 
 }
 choice = None
@@ -38,7 +45,9 @@ print("-"*title_len)
 print("IMAGE CUNVOLUTER".center(title_len))
 print("-"*title_len, end="\n\n")
 print("[1]: Sharpen image", "[2]: Box blur", "[3]: Gaussian Blur", \
-      "[4]: Laplacian","[5]: Emboss" , sep="\n\n")
+      "[4]: Laplacian","[5]: Emboss", "[6]: Glow", "[7]: Edge Enhance",\
+        "[8]: High-Pass filter", "[9]: Sobel V", "[10]: Sobel H", "[11]: Prewitt"\
+        ,"[12]: Shift", "[13]: Ridge" , sep="\n")
 print()
 
 while True:
