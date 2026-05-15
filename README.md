@@ -61,5 +61,5 @@ Option:
 ## Future Improvements
 
 *   **RGB Support:** Expanding the convolution engine to process 3-dimensional matrices (Red, Green, and Blue channels independently) to support color image filtering.
-*   **Performance Optimization:** Replacing the native Python nested loops with vectorized operations or compiled C-extensions (like `scipy.signal.convolve2d`) to process high-resolution images in real-time.
+
 
